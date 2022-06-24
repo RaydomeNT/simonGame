@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Simon</title>
+</head>
+<body>
+    <main class="game">
+        <header>
+            <h1 class="heading js-heading">Simon</h1>
+        </header>
+
+        <section class="tile-container js-container unclickable">
+            <div class="tile tileRed" data-tile="red"></div>
+            <div class="tile tileGreen" data-tile="green"></div>
+            <div class="tile tileBlue" data-tile="blue"></div>
+            <div class="tile tileYellow" data-tile="yellow"></div>
+        </section>
+
+        <footer class="infoSection">
+            <button class="startButton js-start">Start</button>
+            <span class="info js-info hidden"></span>
+        </footer>
+    </main>
+
+    <div class="hidden">
+        <audio src="./sound/simonSound1Red.mp3" data-sound="red"></audio>
+        <audio src="./sound/simonSound2Green.mp3" data-sound="green"></audio>
+        <audio src="./sound/simonSound3Blue.mp3" data-sound="blue"></audio>
+        <audio src="./sound/simonSound4Yellow.mp3" data-sound="yellow"></audio>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
